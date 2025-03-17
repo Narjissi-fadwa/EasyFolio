@@ -1,0 +1,33 @@
+@import ../../node_modules/bootstrap/scss/functions
+@import ../../node_modules/bootstrap/scss/variables
+
+$background-color: #ffffff
+$default-color: #0a0f14
+$heading-color: #0f2943
+$accent-color: #e87532
+$surface-color: #ffffff
+$contrast-color: #ffffff
+
+
+$colors: ("bg-color": $background-color , "default": $default-color , "heading":$heading-color , "accent":$accent-color ,"surface":$surface-color , "contrast":$contrast-color)
+
+$theme-colors: map-merge($colors , $theme-colors)
+$spacer: 1vh 
+$my-spacers:(
+    1: $spacer * 1,
+    2: $spacer * 2,
+    3: $spacer * 3,
+    4: $spacer * 4,
+    5: $spacer * 5,
+    6: $spacer * 6,
+    7: $spacer * 7,
+    8: $spacer * 8,
+    9: $spacer * 9,
+    10: $spacer * 10,
+    11: $spacer * 11,
+    12: $spacer * 12,
+    13: $spacer * 13,
+)
+
+
+$spacers: map-merge( $spacers, $my-spacers)
