@@ -1,0 +1,47 @@
+header
+    z-index: 1000000000000
+    width: 100%
+    .header-container
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103)
+.dropdown
+    &:hover .dropdown-menu
+        display: block
+.deep-menu
+    display: none !important
+.deep
+    &:hover .deep-menu
+        background: #000 !important
+    //   input
+    //     display: none
+.sitename
+    font-family: "Questrial"
+    font-size: 24px
+#menu , label
+    display: none
+
+@media (max-width:480px) 
+    label
+        display: block
+    header
+        nav
+            background-color: white !important
+            width: 80% !important
+            height: 80vh !important
+            right: -200% !important
+            position: fixed !important
+            flex-direction: column
+            justify-content: start
+            align-items: baseline  !important
+            padding: 3vh !important
+            top: 10vh !important
+            border-radius: 10px !important
+            transition: 0.5s !important
+        #menu
+            &:checked ~ nav
+                left: 10vw !important
+                top: 10vh !important
+                right: 10vw !important
+                bottom: 10vh !important
+
+    
+        

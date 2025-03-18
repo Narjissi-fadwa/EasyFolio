@@ -1,0 +1,55 @@
+*
+    padding: 0
+    margin: 0
+// about style
+.about
+    .about-title
+        width: 100%
+        h2
+            font-family: "Questrial"
+            font-size: 42px
+        svg
+            width: 200px
+            height: 20px
+            color: $accent-color
+        p
+            font-family: "Roboto"
+    .about-content
+        .right-about
+            font-family: "Roboto"
+            font-size: 14px
+            .signature
+                .signature-info
+                    h4
+                        font-family: "Questrial"
+                        font-size: 20px
+                    p
+                        font-family: "Roboto"
+// skills style
+.skill-box
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103)
+    h3
+        font-family: "Questrial"
+        font-size: 20px
+    p , span
+        font-family: "Roboto"
+        font-size: 14px
+    .progress
+        height: 8px
+        .progress-bar
+            background-color: $accent-color !important
+
+@media (max-width:480px) 
+    .about
+        .about-title
+            width: 100% !important
+            p
+                width: 85% !important
+        .about-content
+            width: 100% !important
+            .right-about
+                width: 100% !important
+            .left-about
+                width: 100% !important
+                    
+
