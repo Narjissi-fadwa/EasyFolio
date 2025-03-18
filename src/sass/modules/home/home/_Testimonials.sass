@@ -1,0 +1,54 @@
+*
+    padding: 0
+    margin: 0
+.testimonials
+    .testimonials-title
+        h2
+            font-family: "Questrial"
+            font-size: 42px
+        svg
+            width: 200px
+            height: 20px
+            color: $accent-color
+        p
+            font-family: "Roboto"
+    .testimonials-content
+        .carousel-control
+            button
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103)
+                &:hover
+                    background-color: $accent-color !important
+                    color: white !important
+        .carousel
+            .carousel-inner
+                .carousel-item
+                    .carousel-content
+                        .left-carousel
+                            width: 60%
+                            h2
+                                font-family: "Questrial"
+                                font-size: 24px
+                            p
+                                font-family: "Roboto"
+                            .profile
+                                img
+                                    width: 60px
+                                    height: 60px
+                                    border-radius: 50%
+                                .profile-info
+                                    h3
+                                        font-family: "Questrial"
+                                        font-size: 18px
+                                    span
+                                        font-family: "Roboto"
+                                        font-size: 14px
+                        .right-carousel
+                            width: 35%
+@media (max-width:480px)
+    .left-carousel
+        width: 100% !important
+        padding: 0 !important
+    .right-carousel
+        img
+            display: none !important
+
