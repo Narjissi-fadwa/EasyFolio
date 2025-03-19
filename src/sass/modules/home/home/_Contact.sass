@@ -1,0 +1,99 @@
+.contact
+    display: flex
+    padding: 50px 100px
+    background-color: $background-color2 
+    gap: 80px
+    .contact-left
+        width: 50%
+        display: flex
+        flex-direction: column
+        gap: 30px !important
+        padding: 0 10px
+        .title
+            font-family: "Questrial"
+            font-size: 14px
+            color: $default-color
+            font-weight: bold 
+            text-transform: uppercase
+        h2
+            font-family: "Questrial"
+            font-size: 45px
+            color: $heading-color
+            font-weight: bold
+        p
+            font-family: "Roboto"
+            font-size: 20px 
+            color: $default-color
+            font-weight: lighter !important
+        .contact-info
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            div
+                display: flex
+                padding: 10px 0
+                i
+                    color: $accent-color
+                    font-size: 18px
+                span
+                    font-family: "Roboto"
+                    font-size: 18px
+            a
+                text-decoration: none
+                padding: 10px 0
+                font-family: "Roboto"
+                font-size: 18px
+                color: $heading-color
+                font-weight: 50000
+    .contact-right
+        width: 50%
+        background-color: $background-color
+        border-radius: 10px
+        padding: 40px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .message
+            display: flex
+            flex-direction: column
+            gap: 3vh
+            div
+                padding: 5px
+                input
+                    // padding: 12px 20px
+                    padding: 2vh 1vw !important
+                    border: 0.5px solid  rgba(132, 130, 133, 0.336)
+                    width: 100%
+                    border-radius: 10px
+                    &:focus
+                        outline: 0.5px solid  #e87532 !important
+                        box-shadow: 4px 4px 8px 8px #e8753232  
+                textarea
+                    padding-left:1vw 
+                    padding-bottom: 15vh
+                    border: 0.5px solid  rgba(132, 130, 133, 0.336)
+                    border-radius: 10px
+                    width: 100%
+                    &:focus
+                        outline: 0.5px solid  #e87532 !important
+                        box-shadow: 4px 4px 8px 8px #e8753232
+                button
+                    background-color: $accent-color
+                    color: white
+                    padding: 12px 32px
+                    font-family: "Roboto"
+                    border: none
+                    width: 100%
+                    border-radius: 10px
+@media (max-width:480px) 
+    .contact
+        flex-direction: column
+        padding: 50px 10px
+        width: 100%
+        align-items: center
+        gap: 20px
+        .contact-left
+            width: 100%
+            align-items: start 
+        .contact-right
+            width: 100%
