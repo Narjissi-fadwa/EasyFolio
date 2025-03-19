@@ -1,0 +1,104 @@
+.portfolio-content
+    .p-title
+        gap: 0.5rem
+
+        h2
+            font-family: "Questrial" , sans-serif
+            font-size: 42px
+        svg
+            width: 200px
+            height: 20px
+            color: $accent-color
+        p
+            font-family: "Roboto"
+            font-size: 16px
+
+    .portfolio-item
+        .p-menu
+            gap: 1rem
+
+            .p-btn
+                text-decoration: none
+                padding: 0.5rem 1rem
+                background-color: transparent
+                border-radius: 40px
+                color: $heading-color
+                transition: 0.3s
+                font-family: "Roboto", sans-serif
+                border: none
+
+            .p-btn:hover
+                background-color: #fcebe0
+                color: $accent-color
+            .p-btn:focus
+                color: white
+                background-color: $accent-color
+    .all-project
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 1rem
+        .p-project
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 3rem
+        div
+            display: block
+
+            .project
+                display: flex
+                align-items: left
+                justify-content: center
+                flex-direction: column
+                border-radius: 10px
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103)
+                transition: 0.3s
+                img
+                    width: 450px
+                    border-top-left-radius: 10px
+                    border-top-right-radius: 10px
+                .p-description
+                    h6
+                        font-family: "Roboto", sans-serif
+                        font-weight: 600
+
+                    h4
+                        font-family: "Questrial", sans-serif
+                        font-weight: 600
+
+                    p
+                        font-size: 14px
+                        color: #6c6f726a
+                        font-family: "Roboto", sans-serif
+#bar:has(button[data-filter="web"]:focus)~.all-project #p-project .project:not(.web),
+#bar:has(button[data-filter="graphics"]:focus)~.all-project #p-project .project:not(.graphics),
+#bar:has(button[data-filter="motion"]:focus)~.all-project #p-project .project:not(.motion),
+#bar:has(button[data-filter="branding"]:focus)~.all-project #p-project .project:not(.branding) 
+    display: none
+
+@media (max-width:480px) 
+    .p-title
+        p
+            width: 90% !important
+    .portfolio-item
+        justify-content: center !important
+        width: 100% !important
+        .p-menu
+            flex-wrap: wrap !important
+            width: 100% !important
+           
+        .all-project
+            .p-project
+                display: flex !important
+                align-items: center !important
+                justify-content: center !important
+                flex-direction: column !important
+                .project
+                    width: 100% !important
+                    justify-content: center !important
+                    img
+                        width: 100% !important
+                    .p-description
+                        padding: 1rem !important
+                        p
+                            font-size: 12px !important

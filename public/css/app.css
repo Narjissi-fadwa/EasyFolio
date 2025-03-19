@@ -21247,6 +21247,124 @@ header .header-container {
     width: 100% !important;
   }
 }
+.portfolio-content .p-title {
+  gap: 0.5rem;
+}
+.portfolio-content .p-title h2, .portfolio-content .p-title .h2 {
+  font-family: "Questrial", sans-serif;
+  font-size: 42px;
+}
+.portfolio-content .p-title svg {
+  width: 200px;
+  height: 20px;
+  color: #e87532;
+}
+.portfolio-content .p-title p {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.portfolio-content .portfolio-item .p-menu {
+  gap: 1rem;
+}
+.portfolio-content .portfolio-item .p-menu .p-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-radius: 40px;
+  color: #0f2943;
+  transition: 0.3s;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+.portfolio-content .portfolio-item .p-menu .p-btn:hover {
+  background-color: #fcebe0;
+  color: #e87532;
+}
+.portfolio-content .portfolio-item .p-menu .p-btn:focus {
+  color: white;
+  background-color: #e87532;
+}
+.portfolio-content .all-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.portfolio-content .all-project .p-project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.portfolio-content .all-project div {
+  display: block;
+}
+.portfolio-content .all-project div .project {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103);
+  transition: 0.3s;
+}
+.portfolio-content .all-project div .project img {
+  width: 450px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.portfolio-content .all-project div .project .p-description h6, .portfolio-content .all-project div .project .p-description .h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.portfolio-content .all-project div .project .p-description h4, .portfolio-content .all-project div .project .p-description .h4 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 600;
+}
+.portfolio-content .all-project div .project .p-description p {
+  font-size: 14px;
+  color: rgba(108, 111, 114, 0.4156862745);
+  font-family: "Roboto", sans-serif;
+}
+
+#bar:has(button[data-filter=web]:focus) ~ .all-project #p-project .project:not(.web),
+#bar:has(button[data-filter=graphics]:focus) ~ .all-project #p-project .project:not(.graphics),
+#bar:has(button[data-filter=motion]:focus) ~ .all-project #p-project .project:not(.motion),
+#bar:has(button[data-filter=branding]:focus) ~ .all-project #p-project .project:not(.branding) {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .p-title p {
+    width: 90% !important;
+  }
+  .portfolio-item {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .portfolio-item .p-menu {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+  }
+  .portfolio-item .all-project .p-project {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .portfolio-item .all-project .p-project .project {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .portfolio-item .all-project .p-project .project img {
+    width: 100% !important;
+  }
+  .portfolio-item .all-project .p-project .project .p-description {
+    padding: 1rem !important;
+  }
+  .portfolio-item .all-project .p-project .project .p-description p {
+    font-size: 12px !important;
+  }
+}
 .questions {
   gap: 20px !important;
 }
@@ -21295,6 +21413,92 @@ header .header-container {
   border: none;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.title h2, .title .h2 {
+  font-family: "Questrial", sans-serif;
+  font-size: 42px;
+}
+.title svg {
+  width: 200px;
+  height: 20px;
+  color: #e87532;
+}
+.title p {
+  font-family: "Roboto";
+}
+
+.our-services .s-left {
+  width: 35%;
+}
+.our-services .s-left h2, .our-services .s-left .h2 {
+  font-family: "Questrial", sans-serif !important;
+  font-size: 40px !important;
+}
+.our-services .s-left p {
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.our-services .s-left .btn {
+  width: 40% !important;
+}
+.our-services .s-right {
+  width: 60%;
+}
+.our-services .s-right .my-grid .grid-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103);
+}
+.our-services .s-right .my-grid .grid-item h3, .our-services .s-right .my-grid .grid-item .h3 {
+  font-family: "Questrial", sans-serif;
+  font-size: 20px;
+}
+.our-services .s-right .my-grid .grid-item p {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+@media (max-with: 480px) {
+  .services-content {
+    width: 100% !important;
+  }
+  .our-services {
+    padding-inline: 0 !important;
+    width: 100% !important;
+  }
+  .s-left {
+    width: 100% !important;
+    padding-inline: 0 !important;
+    text-align: center;
+  }
+  .s-left h2, .s-left .h2 {
+    width: 100% !important;
+    text-align: center;
+  }
+  .s-left .btn {
+    width: 100% !important;
+  }
+  .s-right {
+    width: 100% !important;
+    padding-inline: 0 !important;
+  }
+  .s-right .my-grid {
+    width: 100% !important;
+  }
+  .s-right .my-grid .grid-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103);
+  }
+  .s-right .my-grid .grid-item h3, .s-right .my-grid .grid-item .h3 {
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+  }
+  .s-right .my-grid .grid-item p {
+    font-family: "Roboto";
+    font-size: 14px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
