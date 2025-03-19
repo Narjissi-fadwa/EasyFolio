@@ -21065,56 +21065,57 @@ header .header-container {
     width: 100% !important;
   }
 }
-.contact {
-  display: flex;
-  padding: 50px 100px;
+.contact-section {
+  padding: 50px;
   background-color: #faf9fb;
-  gap: 80px;
 }
-.contact .contact-left {
+.contact-section .contact {
+  display: flex;
+}
+.contact-section .contact-left {
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 30px !important;
   padding: 0 10px;
 }
-.contact .contact-left .title {
+.contact-section .contact-left .title {
   font-family: "Questrial";
   font-size: 14px;
   color: #0a0f14;
   font-weight: bold;
   text-transform: uppercase;
 }
-.contact .contact-left h2, .contact .contact-left .h2 {
+.contact-section .contact-left h2, .contact-section .contact-left .h2 {
   font-family: "Questrial";
   font-size: 45px;
   color: #0f2943;
   font-weight: bold;
 }
-.contact .contact-left p {
+.contact-section .contact-left p {
   font-family: "Roboto";
   font-size: 20px;
   color: #0a0f14;
   font-weight: lighter !important;
 }
-.contact .contact-left .contact-info {
+.contact-section .contact-left .contact-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.contact .contact-left .contact-info div {
+.contact-section .contact-left .contact-info div {
   display: flex;
   padding: 10px 0;
 }
-.contact .contact-left .contact-info div i {
+.contact-section .contact-left .contact-info div i {
   color: #e87532;
   font-size: 18px;
 }
-.contact .contact-left .contact-info div span {
+.contact-section .contact-left .contact-info div span {
   font-family: "Roboto";
   font-size: 18px;
 }
-.contact .contact-left .contact-info a {
+.contact-section .contact-left .contact-info a {
   text-decoration: none;
   padding: 10px 0;
   font-family: "Roboto";
@@ -21122,7 +21123,7 @@ header .header-container {
   color: #0f2943;
   font-weight: 50000;
 }
-.contact .contact-right {
+.contact-section .contact-right {
   width: 50%;
   background-color: #ffffff;
   border-radius: 10px;
@@ -21131,36 +21132,36 @@ header .header-container {
   flex-direction: column;
   justify-content: space-between;
 }
-.contact .contact-right .message {
+.contact-section .contact-right .message {
   display: flex;
   flex-direction: column;
   gap: 3vh;
 }
-.contact .contact-right .message div {
+.contact-section .contact-right .message div {
   padding: 5px;
 }
-.contact .contact-right .message div input {
+.contact-section .contact-right .message div input {
   padding: 2vh 1vw !important;
   border: 0.5px solid rgba(132, 130, 133, 0.336);
   width: 100%;
   border-radius: 10px;
 }
-.contact .contact-right .message div input:focus {
+.contact-section .contact-right .message div input:focus {
   outline: 0.5px solid #e87532 !important;
   box-shadow: 4px 4px 8px 8px rgba(232, 117, 50, 0.1960784314);
 }
-.contact .contact-right .message div textarea {
+.contact-section .contact-right .message div textarea {
   padding-left: 1vw;
   padding-bottom: 15vh;
   border: 0.5px solid rgba(132, 130, 133, 0.336);
   border-radius: 10px;
   width: 100%;
 }
-.contact .contact-right .message div textarea:focus {
+.contact-section .contact-right .message div textarea:focus {
   outline: 0.5px solid #e87532 !important;
   box-shadow: 4px 4px 8px 8px rgba(232, 117, 50, 0.1960784314);
 }
-.contact .contact-right .message div button {
+.contact-section .contact-right .message div button {
   background-color: #e87532;
   color: white;
   padding: 12px 32px;
@@ -21171,18 +21172,22 @@ header .header-container {
 }
 
 @media (max-width: 480px) {
-  .contact {
-    flex-direction: column;
-    padding: 50px 10px;
+  .contact-section {
+    padding-block: 50px;
+    padding-inline: 0px;
     width: 100%;
-    align-items: center;
     gap: 20px;
   }
-  .contact .contact-left {
+  .contact-section .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-section .contact-left {
     width: 100%;
     align-items: start;
   }
-  .contact .contact-right {
+  .contact-section .contact-right {
+    padding-inline: 10px;
     width: 100%;
   }
 }
@@ -21242,6 +21247,54 @@ header .header-container {
     width: 100% !important;
   }
 }
+.questions {
+  gap: 20px !important;
+}
+.questions h2, .questions .h2 {
+  font-family: "Questrial";
+  font-size: 42px;
+}
+.questions svg {
+  width: 200px;
+  height: 20px;
+  color: #e87532;
+}
+.questions p {
+  font-family: "Roboto";
+  width: 50% !important;
+}
+.questions .accordion {
+  border: 0.5px solid rgba(132, 130, 133, 0.463);
+  gap: 20px !important;
+  border-radius: 10px !important;
+}
+.questions .accordion .accordion-item {
+  border-radius: 10px !important;
+}
+.questions .accordion .accordion-item .accordion-header:focus {
+  background-color: rgba(232, 117, 50, 0.1058823529) !important;
+  color: #e87532;
+}
+.questions .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: white;
+  border: 0.5px solid rgba(132, 130, 133, 0.336);
+  font-weight: 600;
+  font-family: "Questrial", sans-serif;
+  color: default-color;
+  box-shadow: none;
+}
+.questions .accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: #e87532;
+}
+.questions .accordion .accordion-item .accordion-header .accordion-button:focus {
+  background-color: rgba(232, 117, 50, 0.0509803922) !important;
+  color: #e87532;
+}
+.questions .accordion .accordion-collapse {
+  background-color: rgba(232, 117, 50, 0.0509803922) !important;
+  border: none;
+}
+
 * {
   padding: 0;
   margin: 0;

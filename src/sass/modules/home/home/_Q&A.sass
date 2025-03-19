@@ -1,2 +1,39 @@
+.questions  
+    gap: 20px !important
+    h2
+        font-family: "Questrial"
+        font-size: 42px
+    svg
+        width: 200px
+        height: 20px
+        color: $accent-color
+    p
+        font-family: "Roboto"
+        width: 50% !important
+    .accordion 
+        border: 0.5px solid  rgba(132, 130, 133, 0.463)
+        gap: 20px !important
+        border-radius: 10px !important
+        .accordion-item
+            border-radius: 10px !important
 
-
+            .accordion-header
+                &:focus 
+                    background-color: #e875321b !important
+                    color: $active 
+                .accordion-button
+                    background-color: white
+                    border: 0.5px solid  rgba(132, 130, 133, 0.336)
+                    font-weight: 600
+                    font-family: "Questrial" , sans-serif
+                    color: default-color
+                    box-shadow: none
+                    &:hover
+                        color: $active
+                    &:focus 
+                        background-color: #e875320d !important
+                        color: $active 
+        .accordion-collapse
+            background-color: #e875320d !important
+            border: none
+            
