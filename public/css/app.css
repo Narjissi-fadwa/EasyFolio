@@ -20980,7 +20980,6 @@ header .header-container {
   header nav {
     background-color: white !important;
     width: 80% !important;
-    height: 80vh !important;
     right: -200% !important;
     position: fixed !important;
     flex-direction: column;
@@ -21418,16 +21417,16 @@ header .header-container {
   margin: 0;
 }
 
-.title h2, .title .h2 {
+.s-title h2, .s-title .h2 {
   font-family: "Questrial", sans-serif;
   font-size: 42px;
 }
-.title svg {
+.s-title svg {
   width: 200px;
   height: 20px;
   color: #e87532;
 }
-.title p {
+.s-title p {
   font-family: "Roboto";
 }
 
@@ -21460,24 +21459,26 @@ header .header-container {
   font-size: 14px;
 }
 
-@media (max-with: 480px) {
+@media (max-width: 480px) {
   .services-content {
     width: 100% !important;
   }
   .our-services {
-    padding-inline: 0 !important;
+    display: flex;
+    flex-direction: column;
     width: 100% !important;
   }
   .s-left {
     width: 100% !important;
     padding-inline: 0 !important;
-    text-align: center;
   }
   .s-left h2, .s-left .h2 {
     width: 100% !important;
-    text-align: center;
   }
-  .s-left .btn {
+  .s-left p {
+    width: 100% !important;
+  }
+  .s-left a {
     width: 100% !important;
   }
   .s-right {
@@ -21488,6 +21489,7 @@ header .header-container {
     width: 100% !important;
   }
   .s-right .my-grid .grid-item {
+    width: 100% !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 20px 0 rgba(0, 0, 0, 0.103);
   }
   .s-right .my-grid .grid-item h3, .s-right .my-grid .grid-item .h3 {
